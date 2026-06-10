@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>個人網頁</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>個人網站</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="scanlines"></div>
+
+  <canvas id="starfield"></canvas>
+
+  <nav class="pixel-nav">
+    <div class="nav-logo">&gt; REX HUANG</div>
+    <ul class="nav-links">
+      <li><a href="#hero">HOME</a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#works">WORKS</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+    </ul>
+    <div class="nav-hp">
+      HP <span class="hp-bar">████████</span> 100
+    </div>
+  </nav>
+
+  <section id="hero" class="hero-section">
+    <div class="hero-content">
+      <p class="hero-eyebrow">&gt;&gt; LOADING PROFILE...</p>
+      <h1 class="hero-title" id="typed-title"></h1>
+      <p class="hero-sub">LEVEL 999 &nbsp;|&nbsp; UNIVERSITY STUDENT &nbsp;|&nbsp; CHIAYI, TAIWAN</p>
+      <div class="hero-stats">
+        <div class="stat-row"><span class="stat-label">STR</span><span class="stat-bar">███████░░░</span><span class="stat-val">82</span></div>
+        <div class="stat-row"><span class="stat-label">INT</span><span class="stat-bar">█████████░</span><span class="stat-val">95</span></div>
+        <div class="stat-row"><span class="stat-label">DEX</span><span class="stat-bar">████████░░</span><span class="stat-val">90</span></div>
+        <div class="stat-row"><span class="stat-label">CHA</span><span class="stat-bar">█████████░</span><span class="stat-val">96</span></div>
+      </div>
+      <a href="#about" class="pixel-btn btn-secondary">WHO AM I</a>
+      <a href="#works" class="pixel-btn btn-primary">MY WORKS</a>
+    </div>
+
+  </section>
+
+  <!-- ABOUT ME -->
+  <section id="about" class="section about-section">
+    <div class="section-header">
+      <h2 class="section-title">ABOUT ME</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-card pixel-box">
+        <h3 class="card-title">📍INFORMATION</h3>
+        <div class="info-list">
+          <p><span class="info-key">NAME</span><span class="info-sep">::</span><span class="info-val">Rex Huang</span></p>
+          <p><span class="info-key">CLASS</span><span class="info-sep">::</span><span class="info-val">STUDENT</span></p>
+          <p><span class="info-key">ORIGIN</span><span class="info-sep">::</span><span class="info-val">KAOHSIUNG, TAIWAN</span></p>
+        </div>
+      </div>
+      <div class="about-card pixel-box">
+        <h3 class="card-title">📍SKILL TREE</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">HTML</span>
+          <span class="skill-tag">CSS</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">UI/UX</span>
+          <span class="skill-tag">Photoshop</span>
+          <span class="skill-tag">Illustrator</span>
+          <span class="skill-tag">Sleep</span>
+          <span class="skill-tag">Eat</span>
+          <span class="skill-tag">MOSTER STRIKE</span>
+        </div>
+      </div>
+      <div class="about-card pixel-box about-bio">
+        <h3 class="card-title">📍STORY LOG</h3>
+        <p class="bio-text">
+          一位甘苦大學生，就讀數位學習設計與管理學系，現在大二。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORKS -->
+  <section id="works" class="section works-section">
+    <div class="section-header">
+      <h2 class="section-title">WORKS</h2>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-item pixel-box" onclick="openLightbox('https://i.postimg.cc/y8XbjWfM/photo-output-9-2.jpg', 'ARTWORK 01')">
+        <img src="https://i.postimg.cc/y8XbjWfM/photo-output-9-2.jpg" alt="ARTWORK 01" />
+        <div class="gallery-overlay"><span>▶ VIEW</span></div>
+        <p class="gallery-label">ARTWORK_01</p>
+      </div>
+      <div class="gallery-item pixel-box" onclick="openLightbox('https://i.postimg.cc/FK0CzzSp/photo-output-1-3kao-bei.jpg', 'ARTWORK 02')">
+        <img src="https://i.postimg.cc/FK0CzzSp/photo-output-1-3kao-bei.jpg" alt="ARTWORK 02" />
+        <div class="gallery-overlay"><span>▶ VIEW</span></div>
+        <p class="gallery-label">ARTWORK_02</p>
+      </div>
+      <div class="gallery-item pixel-box" onclick="openLightbox('https://i.postimg.cc/jjRP6S93/photo-output-1-3.jpg', 'ARTWORK 03')">
+        <img src="https://i.postimg.cc/jjRP6S93/photo-output-1-3.jpg" alt="ARTWORK 03" />
+        <div class="gallery-overlay"><span>▶ VIEW</span></div>
+        <p class="gallery-label">ARTWORK_03</p>
+      </div>
+      <div class="gallery-item pixel-box" onclick="openLightbox('https://i.postimg.cc/25jTkGzr/photo-output-1-4.jpg', 'ARTWORK 04')">
+        <img src="https://i.postimg.cc/25jTkGzr/photo-output-1-4.jpg" alt="ARTWORK 04" />
+        <div class="gallery-overlay"><span>▶ VIEW</span></div>
+        <p class="gallery-label">ARTWORK_04</p>
+      </div>
+      <div class="gallery-item pixel-box" onclick="openLightbox('https://i.postimg.cc/1tnGXY2C/photo-output-7-4.jpg', 'ARTWORK 05')">
+        <img src="https://i.postimg.cc/1tnGXY2C/photo-output-7-4.jpg" alt="ARTWORK 05" />
+        <div class="gallery-overlay"><span>▶ VIEW</span></div>
+        <p class="gallery-label">ARTWORK_05</p>
+      </div>
+      <div class="gallery-item pixel-box" onclick="openLightbox('https://i.postimg.cc/tgf6KNJx/photo-output-3-6.jpg', 'ARTWORK 06')">
+        <img src="https://i.postimg.cc/tgf6KNJx/photo-output-3-6.jpg" alt="ARTWORK 06" />
+        <div class="gallery-overlay"><span>▶ VIEW</span></div>
+        <p class="gallery-label">ARTWORK_06</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact-section">
+    <div class="section-header">
+      <h2 class="section-title">CONTACT</h2>
+    </div>
+    <div class="contact-wrap pixel-box">
+      <p class="contact-prompt">&gt; SEND MESSAGE TO ME!!</p>
+      <div class="contact-form">
+        <div class="form-row">
+          <label>NAME_</label>
+          <input type="text" class="pixel-input" placeholder="YOUR NAME" />
+        </div>
+        <div class="form-row">
+          <label>MAIL_</label>
+          <input type="email" class="pixel-input" placeholder="YOUR@EMAIL.COM" />
+        </div>
+        <div class="form-row">
+          <label>MESSAGE_</label>
+          <textarea class="pixel-input" rows="4" placeholder="TYPE MESSAGE HERE..."></textarea>
+        </div>
+        <button class="pixel-btn btn-primary full-w" id="send-btn">▶ SEND MESSAGE</button>
+      </div>
+      <div class="social-row">
+        <a href="#" class="social-link">[INSTAGRAM]</a>
+        <a href="#" class="social-link">[FACEBOOK]</a>
+        <a href="#" class="social-link">[THREADS]</a>
+        <a href="#" class="social-link">[EMAIL]</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="pixel-footer">
+    <p>&copy; 2026 RRREEEXXX &nbsp;|&nbsp; MADE WITH <span class="heart blink">LIVER</span> &nbsp;|&nbsp; THANKS FOR WATCHING</p>
+  </footer>
+
+  <!-- MESSAGE MODAL -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal-box pixel-box">
+      <p class="modal-icon">✓</p>
+      <p class="modal-msg">MESSAGE SENT!</p>
+      <p class="modal-sub">I will reply ASAP.</p>
+      <button class="pixel-btn btn-primary" id="modal-close">OK ▶</button>
+    </div>
+  </div>
+
+  <!-- LIGHTBOX 放大檢視 -->
+  <div class="lightbox-overlay" id="lightbox" onclick="closeLightbox()">
+    <div class="lightbox-box pixel-box" onclick="event.stopPropagation()">
+      <p class="lightbox-title" id="lightbox-title">ARTWORK</p>
+      <img id="lightbox-img" src="" alt="" />
+      <button class="pixel-btn btn-primary" onclick="closeLightbox()">✕ CLOSE</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
